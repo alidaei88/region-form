@@ -1,0 +1,4 @@
+.region {
+    display: flex;
+    flex-direction: column;
+}
