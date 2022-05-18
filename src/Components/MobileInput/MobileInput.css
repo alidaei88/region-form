@@ -1,0 +1,10 @@
+.provinceContainer {
+    margin: 1vh 0;
+}
+
+.mobileInput {
+    background-color: #F5C6A5;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 6px;
+}

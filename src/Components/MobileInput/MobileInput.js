@@ -1,3 +1,4 @@
+import './MobileInput.css';
 import { useImperativeHandle, useRef } from "react";
 
 
@@ -14,9 +15,10 @@ const MobileInput = (_, ref) => {
     // }))
 
     return (
-        <>
+        <div className='mobile'>
+            <label htmlFor='mob'>Phone Number: </label>
             <input className="mobileInput" type={`number`} />
-        </>
+        </div>
     );
 }
 

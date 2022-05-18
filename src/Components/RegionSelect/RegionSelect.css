@@ -2,3 +2,27 @@
     display: flex;
     flex-direction: column;
 }
+
+.mobile {
+    margin: 2vh 0;
+}
+
+#province {
+    background-color: #852747;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: #ffffff
+}
+
+#city{
+    background-color: #852747;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: #ffffff
+}
+
+label{
+    font-weight: 600;
+}

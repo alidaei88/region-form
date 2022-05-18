@@ -1,6 +1,7 @@
 import './Main.css';
 import MobileInput from "../MobileInput/MobileInput";
 import RegionSelect from "../RegionSelect/RegionSelect";
+import SubmitBtn from '../SubmitBtn/SubmitBtn';
 import { useRef, useState } from 'react';
 
 
@@ -16,7 +17,8 @@ const Main = () => {
         <main className="container">
             <RegionSelect province={ province } provinceOnchangeHandler={ provinceOnchangeHandler } />
             <MobileInput ref={mobNumberRef} />
-            <button className="submit" >Submit</button>
+            <SubmitBtn />
+           
         </main>
      );
 }

@@ -1,0 +1,11 @@
+
+
+.submit {
+    padding: 8px 20px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 15px 2px #A2416B;
+    border: none;
+    background-color: #FF7777 ;
+    color: #ffffff;
+    cursor: pointer;
+}
