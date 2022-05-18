@@ -2,20 +2,12 @@ import './RegionSelect.css';
 import { provinces, cities } from '../../public/provinces'
 import { useState } from 'react';
 
-const RegionSelect = () => {
+const RegionSelect = ({province, provinceOnchangeHandler}) => {
 
-    const [province, setProvince] = useState();
+    const filteredCity = cities.filter(city => city.province == province)
+ 
 
-    const provinceOnchangeHandler = (e) => {
-        setProvince(e.target.vale)
-       
-    }
 
-    const CityFilter = () => {
-
-    }
-
-    console.log(province)
     
 
     return ( 
@@ -26,7 +18,7 @@ const RegionSelect = () => {
                     <select name="province" id="province" onChange={provinceOnchangeHandler} value={province}>
                         <option value="">choose province... </option>
                         {
-                            provinces.map((item) => <option value={item?.name} id="province" key={item?.id} >{item?.name} </option>)
+                            provinces.map((item) => <option value={ item?.id } id="province" key={item?.id} >{item?.name} </option>)
                         }
                     </select>
                 </div>
@@ -34,6 +26,9 @@ const RegionSelect = () => {
                     <label htmlFor="city">City:  </label>
                     <select name="city" id="city">
                         <option value="">choose city...</option>
+                        {
+                            filteredCity.map(item => <option value={item?.id} id="city" key={item?.id}>{ item?.name }</option> )
+                        }
                     </select> 
                 </div>
                 
